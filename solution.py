@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from scipy.io import wavfile
 from scipy.signal import iirnotch, lfilter,butter
 
-
 fs, signal = wavfile.read('corrupted.wav')
 t = np.linspace(0, len(signal)/fs, len(signal))
 
